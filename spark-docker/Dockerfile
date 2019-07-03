@@ -11,7 +11,6 @@ RUN cp /opt/spark/bin/spark-shell /usr/bin
 
 RUN useradd -ms /bin/bash spark
 USER spark
-RUN mkdir /home/spark/scripts
 WORKDIR /home/spark
 
 RUN echo "export SPARK_HOME=/opt/spark" >> ~/.bashrc
